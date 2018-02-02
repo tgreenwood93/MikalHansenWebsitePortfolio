@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <title>Mikal Hansen Tattoo</title>
+  <link rel="stylesheet" href="js/baguetteBox.css">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+
+<body>
+
+  <div class="icon">
+    <div class="Hamburger">
+    </div>
+  </div>
+  <div class="mobileNav">
+    <nav class="nav">
+      <ul class="navList">
+        <li class="item navlogo">
+          <img src="images/MHlogoGB.png" class="navLogo" height="150px" width="150px">
+        </li>
+        <li class="item">
+          <a href="#Home" class="link scrollTo" data-scrollTo="content1">Home</a>
+        </li>
+        <li class="item">
+          <a href="#About" class="link scrollTo" data-scrollTo="content2">About</a>
+        </li>
+        <li class="item">
+          <a href="#Portfolio" class="link scrollTo" data-scrollTo="content3">Portfolio</a>
+        </li>
+        <li class="item">
+          <a href="#Contact" class="link scrollTo" data-scrollTo="content4">Contact</a>
+        </li>
+        <li>
+          <p class=" copyRight">© 2018 Mikal Hansen</p>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="all-content">
+    <header>
+      <img src="images/MHlogoGB.png" height="400px" width="400px" alt="MH" class="logo">
+    </header>
+
+    <div class="desktopNav">
+      <nav class="deskNav">
+        <ul>
+          <li><a href="#Home" class="scrollTo" data-scrollTo="content1">Home </a></li>
+        <li class="navBreaker"><strong>|</strong></li>
+          <li><a href="#About" class="scrollTo" data-scrollTo="content2">About </a></li>
+          <li class="navBreaker"><strong>|</strong></li>
+          <li><a href="#Portfolio" class="scrollTo" data-scrollTo="content3">Portfolio </a></li>
+          <li class="navBreaker"><strong>|</strong></li>
+          <li><a href="#Contact" class="scrollTo" data-scrollTo="content4">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section id="content1" class="home-hero parallax--bg)">
+      <div class="home-hero-content fff">
+        <h1 class="statement"><bold> Mikal Hansen</bold></h1>
+        <h2 class="tagline">Tattoo / Painting / Digital Art</h2>
+      </div>
+    </section>
+
+    <section id="content2" class="home-about">
+      <div class="portfolioPic"></div>
+      <div class="home-about-textbox">
+        <h1>ABOUT ME</h1>
+        <div class="blurb">
+          <div class="bioContent">
+            <p class="paragraph1">
+              My name is Mikal.
+            </p>
+            <p class="paragraph2">
+              Ceaseless fascination has propelled me into a career as an artist. My goal with my work is to transfer imagination into the waking world, finding a balance between emotion and aesthetic.
+            </p>
+            <p class="paragraph3">
+              For years I have worked with watercolor, oils, acrylic, charcoal, and tattooing, recently finding my way into digital art as well. I love what I do, and am forever grateful for every human being I have grown with along this journey.
+            </p>
+            <p class="paragraph5">
+              "Figure out who you want to be and why you are here, then do that to the best of your ability."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="content3" class="portfolioSection">
+      <p class="selection">
+        Select Portfolio
+      </p>
+      <div class="button-group" data-filter-group="PortImg" id="ButtonSelect">
+        <a class="btn-5 one button10" id="tattoos" href="javascript:;" data-filter=".TattoosPort">Tattoos</a>
+        <a class="btn-5 two button10" id="paitings" href="javascript:;" data-filter=".PaitingsPort">Paintings</a>
+        <a class="btn-5 three button10" id="digitalart" href="javascript:;" data-filter=".DigitalArt">Digital Art</a>
+        <a class="fourButton button10" id="digitalart4" href="javascript:;" data-filter=".None"></a>
+      </div>
+      <div id="TattooSection">
+        <div class="col-sm col-xs contents title">
+          <h2 id="Tattoo">
+        <span id="Port1" class="TattooText">Tattoos</span>
+      </h2>
+        </div>
+      </div>
+      <div id="PaintingSection" class="PaintingSection">
+        <div class="col-sm col-xs title2">
+          <h2 id="Painting">
+          <span id="Port2" class="PaintingText">Paintings</span>
+        </h2>
+        </div>
+      </div>
+      <div id="DigitalArtSection">
+        <div class="col-sm col-xs title3">
+          <h2 id="DigitalArt">
+          <span id="Port3" class="DititalArtText">Digital Art</span>
+        </h2>
+        </div>
+      </div>
+      <div id="AllPictures" class="AllPictures">
+        <div class="grid">
+          <div class="baguetteBoxT gallery">
+            <!--    //Tattoos        -->
+            <a href="/images/Tattoos/Foreshadow.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT1"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Vacate.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort" alt="Vacate fresh (left) healed (right)">
+                <div class="grid-item PortImg  masonryT2" alt="Vacate fresh (left) healed (right)"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Crow.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT3 "></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Chrysanthemum.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT4 "></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/SplodeySkull.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT5"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/FrozenHeart.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT6"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/MotherNature.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT7"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Bird.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT8"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Bloom1.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort" alt="Bloom fresh (left) / healed (right)">
+                <div class="grid-item PortImg  masonryT9" alt="Bloom fresh (left) healed (right)"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Bloom2.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort" alt="Bloom heart fresh (left) / healed (right)">
+                <div class="grid-item PortImg  masonryT10 " alt="Bloom heart fresh (left) / healed (right)"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Bridge.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT11"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/BrokenStatue.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT12"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Majora.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT13"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Dichotomy.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT14"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Roses.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT15"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Strawbirdy.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT16"></div>
+              </div>
+            </a>
+            <a href="/images/Tattoos/Aphrodite.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT17"></div>
+              </div>
+            </a>
+            <a href="images/Tattoos/Deerskull.jpg">
+              <div class="PortImgShadow PortImgMaster TattoosPort">
+                <div class="grid-item PortImg  masonryT18"></div>
+              </div>
+            </a>
+          </div>
+          <!--      //Paintings -->
+          <div class="baguetteBoxP gallery">
+            <a href="images/Paintings/Foreshadow-Painting.jpg">
+              <div class="PortImgShadow PortImgMaster PaitingsPort">
+                <div class="grid-item PortImg  masonryP1"></div>
+              </div>
+            </a>
+            <a href="images/Paintings/Lilithmon.jpg">
+              <div class="PortImgShadow PortImgMaster PaitingsPort">
+                <div class="grid-item PortImg  masonryP2"></div>
+              </div>
+            </a>
+            <a href="images/Paintings/Apathy.jpg">
+              <div class="PortImgShadow PortImgMaster PaitingsPort">
+                <div class="grid-item PortImg  masonryP3"></div>
+              </div>
+            </a>
+            <a href="images/Paintings/Lightning.jpg">
+              <div class="PortImgShadow PortImgMaster PaitingsPort">
+                <div class="grid-item PortImg  masonryP4"></div>
+              </div>
+            </a>
+            <a href="images/Paintings/SkullStudy.jpg">
+              <div class="PortImgShadow PortImgMaster PaitingsPort">
+                <div class="grid-item PortImg  masonryP5"></div>
+              </div>
+            </a>
+            <a href="images/Paintings/Statue.jpg">
+              <div class="PortImgShadow PortImgMaster PaitingsPort">
+                <div class="grid-item PortImg  masonryP6"></div>
+              </div>
+            </a>
+            <a href="images/Paintings/Skull.jpg">
+              <div class="PortImgShadow PortImgMaster PaitingsPort">
+                <div class="grid-item PortImg  masonryP7"></div>
+              </div>
+            </a>
+          </div>
+          <!--     //Digital Art-->
+          <div class="baguetteBoxDA gallery">
+            <a href="images/DigitalArt/Memento.jpg">
+              <div class="PortImgShadow PortImgMaster DigitalArt">
+                <div class="grid-item PortImg  masonryDA1"></div>
+              </div>
+            </a>
+            <a href="images/DigitalArt/Advent.jpg">
+              <div class="PortImgShadow PortImgMaster DigitalArt">
+                <div class="grid-item PortImg  masonryDA2"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="content4" class="Contact">
+      <div class="connect">
+        <h1>Contact</h1>
+        <h3>Get connected to  start on a project</h3>
+        <div class="Contact1">
+          <a href="mailto:Mikeinatortattoo@gmail.com">
+            <div class="hex1">
+              <i class="fa fa-envelope fa-4x" aria-hidden="true"></i>
+            </div>
+            <p class="contactText">
+              &bull; Mikeinatortattoo@gmail.com
+            </p>
+            <p class="contactType">
+              Email
+            </p>
+          </a>
+        </div>
+        <div class="Contact2">
+          <a href="https://www.instagram.com/denyxyourself/">
+            <div class="hex2">
+              <i class="fa fa-instagram fa-4x" aria-hidden="true"></i>
+            </div>
+            <p class="contactInsta">
+              &bull; Denyxyourself
+            </p>
+            <p class="contactType">
+              Instagram
+            </p>
+          </a>
+        </div>
+        <div class="Contact4">
+          <a href="javascript:;">
+            <div class="hex4">
+              <i class="fa fa-phone-square fa-4x" aria-hidden="true"></i>
+            </div>
+            <p class="contactPhone">
+              &bull; (541) 741-0840
+            </p>
+            <p class="contactType">Phone</p>
+          </a>
+        </div>
+        <div class="mapmap">
+          <div class="mapspace" id='map'></div>
+
+          <img class="endingLogo" src=images/MHlogoGB.png height="300px" width="300px">
+          <div class="divider">
+
+          </div>
+          <div class="bottom">
+            <p class="footer">
+              Copyright @ 2018 Mikal Hansen &bull; All rights reserved
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.43.0/mapbox-gl.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src="js/JQueryColor.js" type="text/javascript"></script>
+  <script src="//npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="js/isotope.pkgd.js"></script>
+  <script src="js/baguetteBox.js" async></script>
+  <script src="js/main.js" type="text/javascript"></script>
+
+</body>
+
+</html>
