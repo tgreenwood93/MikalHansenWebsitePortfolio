@@ -1,0 +1,612 @@
+body
+ -webkit-overflow-scrolling: touch
+
+.mobileNav nav
+ transform: translateX(-100%)
+ position: fixed
+ top: 0
+ bottom: 0
+ left: 0
+ right: 80%
+ height: 100%
+ text-decoration: none
+ color: black
+ cursor: pointer
+ width: 100%
+ transition: all ease-in-out .75s
+
+nav.active
+ transform: translateX(0%)
+ position: fixed
+ transition: all ease-in-out .5s
+ filter: drop-shadow(0px 4px 4px rgba(0,0,0,1))
+ z-index: 9999
+
+.mobileNav
+  width: 100vw
+
+nav .navList
+  margin: 0
+  padding: 0
+  list-style: none
+  background-color: #232323
+  background-position: right
+  background-repeat: no-repeat
+  background-size: 1000%
+  height: 100vh
+  display: flex
+  width: 80%
+  flex-direction: column
+  justify-content: space-around
+  align-items: stretch
+  overflow: hidden
+  box-shadow: 8px 0px 10px rgba(0,0,0,0.3)
+
+.item
+  width: 100%
+
+.item.navlogo
+ background: transparent
+ margin-top: 0px
+ padding: 0
+ height: auto
+ vertical-align: middle
+
+nav .item
+  text-align: center
+
+.link
+ width: 100%
+ font-size: 1.7em
+
+nav a
+ display: inline-block
+ line-height: 0
+ color: White
+ width: 100%
+ &:hover
+   text-decoration: none
+   color: #68ffd0
+
+nav a:hover
+ text-decoration: none
+ color: #68ffd0
+
+.copyRight
+ width: 100%
+ margin-top: 10px
+ font-size: .7em
+ color: #68ffd0
+ padding: 0
+//hamberger menu
+.icon
+ display: inline-block
+ position: fixed
+ top: 0
+ right: 90%
+ height: 60px
+ width: 60px
+ transform: rotateX(180deg)
+ transform: translateX(50%)
+ cursor: pointer
+ z-index: 10000001
+ transition: all ease-in-out .5s
+.icon.active
+  right: 10%
+
+.Hamburger
+  display: inline-block
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateX(-50%)
+  width: 30px
+  height: 2px
+  filter: drop-shadow(0px 2px 2px rgba(0,0,0,0.8))
+  background-color: white
+  transform: translate(-50%, -50%)
+  &:before, &:after
+    top: -12px
+    position: absolute
+    transform: translateX(-50%)
+    content: ''
+    width: 30px
+    height: 2px
+    background-color: white
+    transition: .5s
+  &:before
+    top: -8px
+  &:after
+    top: 8px
+
+.firstTestBox
+  margin-top: 15px
+
+.icon.active .Hamburger
+  background-color: rgba(white,0)
+  &:before
+   left: 5%
+   top: 0
+   transform: rotate(-45deg)
+  &:after
+   left: 10%
+   top: 0
+   transform: rotate(45deg)
+
+.overlay, h3, h1
+  padding-left: 2px
+
+.all-content
+  position: absolute
+  top: 0
+  left: 0%
+  width: 100vw
+  overflow: hidden
+  transition: all ease-in-out .5s
+
+.all-content.active
+ display: block
+ // left: 80%
+ width: 100vw
+ overflow: hidden
+ transition: all ease-in-out .5s
+ overflow-x: hidden
+ overflow-y: scroll
+
+
+*
+  box-sizing : border-box
+
+
+body
+  margin      : auto
+  text-align  : center
+  font-family : 'Ailerons', 'sans-serif'
+
+
+img
+  max-width : 100%
+  height    : auto
+
+
+/* Typography = = = = = = = = = = = = = = = = = = */
+
+h1
+  font-weight: 300
+  font-size: 2.5rem
+
+
+/* header = = = = = = = = = = = = = = = = = = */
+
+header
+  z-index  : 10
+  position : absolute
+  right    : 0
+  left     : 0
+  margin   : 1em
+
+/* home hero = = = = = = = =
+
+ = = = = = = = = = = */
+
+.home-hero
+  z-index             : 1
+  display             : block
+  height              : 100vh
+  min-height: 480px
+  background-image    : url(../images/SplashPicture.jpg)
+  background-repeat   : no-repeat
+  background-position : center
+  background-size     : cover
+  background-attachment: fixed
+  width: 100%
+  z-index    : 0
+  transition: initial
+  &:before
+    background : #333
+    display    : block
+    z-index    : -9999999999
+    content    : ''
+    top        : 0
+    width      : 100%
+    height     : 100vh
+    min-height: 480px
+    opacity    : 0.3
+
+.home-hero-content
+  display     : block
+  position    : absolute
+  top         : 0
+  right       : 0
+  left        : 0
+  padding-top: 35vh
+  color       : #68ffd0
+
+.logo
+ margin-top: 50vh
+ height: 200px
+ width: 200px
+
+.statement
+  font-size : 2.7rem
+
+.tagline
+  margin-bottom : 3rem
+  font-size     : 1rem
+  font-weight   : 200
+
+.home-about
+ position: relative
+
+
+// hero home
+.portfolioPic
+  left: 0
+  width: 100%
+  height: auto
+  min-height: 480px
+  z-index: 100
+  background-color:  #eee
+  margin: 0
+
+
+.home-about-textbox
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100%
+  min-height: 480px
+  background-color: white
+  color: black
+  float: right
+  outline: 2px solid #3a818e
+  outline-offset: -2.5rem
+  h1
+    display: block
+    color: #3a818e
+    margin-top: -1.5rem
+    padding: 0
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    width: 150px
+    background-color: white
+    font-size: 1.5em
+
+.home-about-textbox h1
+  position: absolute
+  font-size: 2rem
+  left: 50%
+  width: 170px
+  z-index: 1
+  margin-top: 1rem
+
+.blurb
+  position: absolute
+  top: 65px
+  display: table-cell
+  margin: 2.5vh 2em
+  margin: auto
+  height: auto
+  padding: 0vh 50px
+  align-items: center
+  vertical-align: middle
+
+.paragraph1, .paragraph2, .paragraph3
+  margin-bottom: 10px
+
+.home-about-textbox p
+  font-family: Raleway
+  font-size: 0.8rem
+  font-weight: 100
+  text-align: left
+
+.endingQuote
+  position: relative
+
+.portfolioSection
+  background : linear-gradient(315deg, #3a818e, #fff8e9 60%)
+  background-attachment: fixed
+  transition: all 0.3s ease-in-out
+  z-index: -10
+  min-width: 320px
+
+.selection
+  font-size: 2em
+  margin: 0
+  padding: 30px 0px
+
+.TattooText, .PaintingText, .DititalArtText
+  font-size: 1.7em
+
+.btn-5
+ display: inline-block
+
+.button-group
+ position: relative
+ justify-content: center
+
+.gallery
+  justify-content: center
+  width: 100%
+
+.isotope .isotope-item
+ -webkit-transition-duration: 0.8s
+ -moz-transition-duration: 0.8s
+ transition-duration: 0.8s
+
+#AllPictures
+ width: auto
+ min-width: 320px
+ height: auto
+ margin-top: 0px
+ justify-content: center
+ padding: 0
+ margin-top: 100px
+ padding-bottom: 100px
+ transition: all 0.3s ease-in-out
+
+.grid
+ margin: 0 auto
+ display: block
+ position: relative
+ left: auto
+ padding: 0
+
+.grid:after
+ margin: auto
+ content: ''
+ display: block
+ clear: both
+ margin-bottom: 10px
+
+.grid-item
+ clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)
+ -webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)
+ width: 310px
+ height: 310px
+
+.PortImgBorder
+ position: relative
+ width: 320px
+ height: 320px
+ background-color: white
+ clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)
+ -webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)
+
+.PortImgShadow
+ filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.3))
+ &:hover
+  filter: drop-shadow(3px 5px 15px rgba(0,0,0,1))
+
+.PortImg
+ width: 310px
+ height: 310px
+ position: absolute
+ top: 5px
+ left: 5px
+ background-size: cover
+ background-position: center
+ background-repeat: no-repeat
+ background-size: 100%
+ transition: all 0.5s ease-in-out
+ background-color: black
+ &:hover
+  background-size: 120%
+
+.masonryT1
+ background-image: url(images/Tattoos/Foreshadow.jpg)
+
+.masonryT2
+ background-image: url(images/Tattoos/Vacate.jpg)
+ background-size: 105%
+
+.masonryT3
+  background-image: url(images/Tattoos/Crow.jpg)
+  background-size: 80%
+
+.masonryT4
+ background-image: url(images/Tattoos/Chrysanthemum.jpg)
+
+.masonryT5
+ background-image: url(images/Tattoos/SplodeySkull.jpg)
+ background-size: 70%
+
+.masonryT6
+  background-image: url(images/Tattoos/FrozenHeart.jpg)
+  background-size: 90%
+
+.masonryT7
+  background-image: url(images/Tattoos/MotherNature.jpg)
+  background-size: 80%
+
+.masonryT8
+  background-image: url(images/Tattoos/Bird.jpg)
+  background-size: 90%
+
+.masonryT9
+ background-image: url(images/Tattoos/Bloom1.jpg)
+ background-size: 100%
+
+.masonryT10
+  background-image: url(images/Tattoos/Bloom2.jpg)
+  background-size: 100%
+
+.masonryT11
+  background-image: url(images/Tattoos/Bridge.jpg)
+
+.masonryT12
+  background-image: url(images/Tattoos/BrokenStatue.jpg)
+  background-size: 90%
+
+.masonryT13
+  background-image: url(images/Tattoos/Majora.jpg)
+  background-size: 100%
+
+.masonryT14
+ background-image: url(images/Tattoos/Dichotomy.jpg)
+ background-size: 80%
+
+.masonryT15
+ background-image: url(images/Tattoos/Roses.jpg)
+ background-size: 80%
+
+.masonryT16
+  background-image: url(images/Tattoos/Strawbirdy.jpg)
+  background-size: 90%
+
+.masonryT17
+ background-image: url(images/Tattoos/Aphrodite.jpg)
+ background-size: 110%
+
+.masonryT18
+  background-image: url(images/Tattoos/legskull.jpg)
+  background-size: 100%
+
+.masonryP1
+ background-image: url(images/Paintings/WolfGirl.jpg)
+ background-size: 110%
+
+.masonryP2
+ background-image: url(images/Paintings/Lilithmon.jpg)
+
+.masonryP3
+ background-image: url(images/Paintings/Apathy.jpg)
+
+.masonryP4
+ background-image: url(images/Paintings/Lightning.jpg)
+ background-size: 90%
+
+.masonryP5
+ background-image: url(images/Paintings/SkullStudy.jpg)
+ background-size: 90%
+
+.masonryP6
+ background-image: url(images/Paintings/Statue.jpg)
+ background-position: 50% 10%
+ background-size: 100%
+
+.masonryP7
+ background-image: url(images/Paintings/Skull.jpg)
+ background-size: 90%
+
+.masonryDA1
+ background-image: url(images/DigitalArt/TwoGirls.jpg)
+ background-size: 110%
+
+.masonryDA2
+  background-image: url(images/DigitalArt/DigitalSkull.jpg)
+  background-size: 90%
+
+.connect
+ content: ''
+ height: auto
+ min-height: 480px
+ background-color: #eee
+ width: 100vw
+
+.connect h1
+  margin: 0
+  padding-top: 50px
+  font-size: 4em
+  color: #504c52
+
+.connect h3
+  margin: 30px 0px
+  font-size: 1.5em
+  color: #504c52
+
+.hex1, .hex2, .hex3, .hex4
+ margin: 60px 20px
+ margin: auto
+ position: relative
+ height: 200px
+ width: 200px
+ background-color: #aaa
+ clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)
+ -webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)
+ &:hover .fa
+  color: #68ffd0
+
+.fa
+ top: 50%
+ left: 50%
+ transform: translateX(-50%) translateY(-50%)
+ position: absolute
+ color: white
+
+.Contact1, .Contact2, .Contact4
+  display: inline-block
+  position: relative
+  height: auto
+  width: 300px
+  margin:  0
+  margin-bottom: 50px
+  filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.3))
+  transition: all ease-in-out 0.5s
+  &:hover
+   filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.6))
+
+.contactPhone, .contactInsta, .contactText
+  font-family: Lato
+  font-weight: 100
+  font-style: .7em
+  color: #504c52
+  height: 40px
+  &:hover
+
+.contactPhone, .contactInsta, .contactText, a
+  text-decoration: none
+  &:hover
+   text-decoration: none
+
+.contactType
+ width: 200px
+ height: 60px
+ color: #3a818e
+ margin: auto
+ font-size: 1.7em
+
+.mapboxgl-canvas
+ margin-left: -155px
+ height: 290px
+ width:  350px
+ border:  10px solid white
+
+#map
+ height: 290px
+ width: 310px
+ margin: auto
+ filter: drop-shadow(0px 5px 10px rgba(0,0,0,0.6))
+
+.marker .mapboxgl-maker
+ background-image: url(pin.png)
+
+.footer
+ font-size:  2em
+ margin: 0px
+ background-color: #eee
+ padding: 96px 0px
+
+.endingLogo
+ margin-top: 50px
+ padding-bottom: 50px
+
+.divider
+ height: 2px
+ width: 60%
+ right: 20%
+ position: absolute
+ background-color: #504c52
+
+.bottom
+ height: 300px
+
+.footer
+ font-size:  1.7em
+ background-color: #eee
+ margin: auto
+
+#digitalart4
+ height: 1px
+ width: 1px
